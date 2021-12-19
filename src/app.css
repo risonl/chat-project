@@ -1,3 +1,28 @@
+body{
+    background-image: url(./comps/assets/reel.jpg);
+}
+
+.headImage{
+    background-image: url(./comps/assets/ticket.jpg);
+    height: 20em;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-align: center;
+    
+}
+
+.intro{
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 10em;
+    
+}
+
+.homeCC{
+    margin-top: 10em;
+}
+
 .bg-film {
     background-image: none;
     background-color: hotpink;
