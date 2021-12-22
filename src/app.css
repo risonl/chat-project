@@ -2,3 +2,20 @@
     background-image: none;
     background-color: hotpink;
 }
+.marquee {
+    background-color: white;
+    height: 30em;
+    max-width: 100%;
+    border: 1em solid maroon;
+    border-radius: 20%;
+    position: relative;
+}
+td {
+    text-align: center;
+}
+.chatBox {
+    overflow: scroll;
+    background-color: grey;
+    width: 50em;
+    height: 25em;
+}

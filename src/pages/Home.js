@@ -1,13 +1,16 @@
 import Navigation from "../comps/Navigation";
+import { Container, Col, Row,} from "react-bootstrap";
+import Marquee from "../comps/Marquee";
 
 export function Home() {
     return (
         <>
-        <Navigation />
+        <Navigation />  
         <br />
         <br />
         <br />
-        <h1>Home Page</h1>
+        <Marquee />
+        
         </>
     );
 }
