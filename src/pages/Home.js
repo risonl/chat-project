@@ -1,19 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import Navigation from "../comps/Navigation";
-import { Container, Col, Row,} from "react-bootstrap";
-import Marquee from "../comps/Marquee";
+
 
 export function Home() {
     return (
         <>
-<<<<<<< HEAD
-        <Navigation />  
-        <br />
-        <br />
-        <br />
-        <Marquee />
-=======
         <Navigation />
         <Container fluid className="headImage">
             
@@ -61,7 +53,6 @@ export function Home() {
                 </Col>
             </Row>
         </Container>
->>>>>>> cfa14cd51d397f2b7d3209083c8a63697194bb0f
         
         </>
     );
