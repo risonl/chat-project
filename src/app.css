@@ -1,7 +1,33 @@
+body{
+    background-image: url(./comps/assets/reel.jpg);
+}
+
+.headImage{
+    background-image: url(./comps/assets/ticket.jpg);
+    height: 20em;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-align: center;
+    
+}
+
+.intro{
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 10em;
+    
+}
+
+.homeCC{
+    margin-top: 10em;
+}
+
 .bg-film {
     background-image: none;
     background-color: hotpink;
 }
+<<<<<<< HEAD
 .marquee {
     background-color: white;
     height: 30em;
@@ -19,3 +45,5 @@ td {
     width: 50em;
     height: 25em;
 }
+=======
+>>>>>>> cfa14cd51d397f2b7d3209083c8a63697194bb0f
