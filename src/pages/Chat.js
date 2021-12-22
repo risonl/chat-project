@@ -1,4 +1,6 @@
 import { Container, Row, Col} from "react-bootstrap";
+import Navigation from "../comps/Navigation"
+import Footer from "../comps/Footer"
 
 function Chat() {
     return (

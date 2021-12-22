@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import Navigation from "../comps/Navigation";
-
+import Footer from "../comps/Footer"
 
 export function Home() {
     return (
