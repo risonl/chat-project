@@ -1,11 +1,13 @@
 import { Container, Row, Col} from "react-bootstrap";
 import Navigation from "../comps/Navigation"
 import Footer from "../comps/Footer"
+import "./chat.css"
 
 function Chat() {
     return (
         <>
         <Container>
+            <Navigation />
         <Row><h1>This is the Chatroom</h1></Row>
             <Row>
                 <Col></Col>
@@ -19,6 +21,7 @@ function Chat() {
             </Col>
             <Col></Col>
             </Row>
+            <Footer />
         </Container>
         </>
     );
