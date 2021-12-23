@@ -19,9 +19,6 @@ body{
     
 }
 
-.homeCC{
-    margin-top: 10em;
-}
 
 .bg-film {
     background-image: none;
@@ -31,3 +28,21 @@ body{
     background-image: none;
     background-color: hotpink;
 }
+
+.chatpic{
+    height: 20em;
+    width: 20em;
+    align-items: flex-start;
+    contain: content;
+}
+
+.showcase{
+    margin-top: 5em;
+    color: aliceblue;
+    background-color: #17A2B8;
+    margin-bottom: 10em;
+    contain: content;
+    background-size: ;
+}
+
+
