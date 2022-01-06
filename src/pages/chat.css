@@ -1,8 +1,0 @@
-.chatBox {
-    background-color: grey;
-    width: 60em;
-    height: 40em;
-    overflow: scroll;
-    border: 1px solid black;
-    border-radius: 1em;
-}
