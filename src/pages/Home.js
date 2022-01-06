@@ -1,7 +1,11 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import Navigation from "../comps/Navigation";
-import Footer from "../comps/Footer"
+import Footer from "../comps/Footer";
+import directorpic from '../comps/assets/directors.jpg';
+import cinemapic from '../comps/assets/camera.jpg';
+import generalpic from '../comps/assets/generalchat.jpg';
+import plotpic from '../comps/assets/plot.jpg';
 
 export function Home() {
     return (
@@ -20,40 +24,56 @@ export function Home() {
                 </Col>
             </Row>
         </Container>
-            
-        <Container className='homeCC'>
+
+        <Container className="showcase">
             <Row>
                 <Col>
-                    <Card>
-                        <Card.Img variant='top' href=""/>
-                        <Card.Title>General</Card.Title>
-                        <Card.Text>General chat discussing your favorite/least favorite movies ect.</Card.Text>
-                    </Card>
+                    <Container className="chatpic">
+                        <Image src={generalpic} fluid rounded/>
+                    </Container>
                 </Col>
                 <Col>
-                    <Card>
-                        <Card.Img variant='top' href=""/>
-                        <Card.Title>Cinematography</Card.Title>
-                        <Card.Text>All about Cinematography </Card.Text>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card>
-                        <Card.Img variant='top' href=""/>
-                        <Card.Title>Plot</Card.Title>
-                        <Card.Text>All about great movie plots</Card.Text>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card>
-                        <Card.Img variant='top' href=""/>
-                        <Card.Title>Directors</Card.Title>
-                        <Card.Text>A chat about all of the great directors out there</Card.Text>
-                    </Card>
+                    <h1>General Chat</h1>
+                    <p>This is our general chat where we discuss every random topic about movies. What movies you love, How a movie mad you feel, movies you thought were terrible, ect.</p>
                 </Col>
             </Row>
+            <Row>
+                <Col>
+                    <Container className="chatpic">
+                        <Image src={cinemapic} fluid rounded/>
+                    </Container>
+                </Col>
+                <Col>
+                    <h1>Cinematography Chat</h1>
+                    <p>This chat is for discussion about the process of shooting movies. Pretty much used for discussing the camera work. Talk about shots you really like in movies. Give advise to one another about different techniques to use.</p>
+                </Col>
+                <Row>
+                <Col>
+                    <Container className="chatpic">
+                        <Image src={plotpic} fluid rounded/>
+                    </Container>
+                </Col>
+                <Col>
+                    <h1>Movie Plot Chat</h1>
+                    <p>This chat is for talking about your favorite movie plots. Talk about what aspects you like about different movies, the twists and turns that really mess with your head. Keep conversation related to plot specific points. WARNING POSSIBLE SPOILERS!!!!</p>
+                </Col>
+                </Row>
+                <Row>
+                <Col>
+                    <Container className="chatpic">
+                        <Image src={directorpic} fluid rounded/>
+                    </Container>
+                </Col>
+                <Col>
+                    <h1>Directors Chat</h1>
+                    <p>This chat is all about directors. Tell us which ones you love/hate, what makes them special, rank their movies, and anything else you can think of. </p>
+                </Col>
+            </Row>
+            </Row>
         </Container>
-        
+        <Footer/>
+            
+
         </>
     );
 }
