@@ -1,5 +1,8 @@
 import Navigation from "../comps/Navigation"
+<<<<<<< HEAD
+=======
 import Footer from "../comps/Footer"
+>>>>>>> f520f0c (first commit)
 import { Card, Container, Row, Col} from "react-bootstrap";
 
 function About() {
@@ -40,7 +43,10 @@ function About() {
             </Card>
             </Row>
         </Container>
+<<<<<<< HEAD
+=======
         <Footer />
+>>>>>>> f520f0c (first commit)
         </>
     );
 }
