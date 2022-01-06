@@ -4,9 +4,9 @@ import "./footer.css"
 function Footer() {
     return (
     <>
-    <Navbar fixed="bottom" bg="info" variant="dark" classname="footer">
+    <Navbar fixed="bottom" bg="info" variant="dark" className="footer">
         <Container>
-            <Nav classname="me-auto"> 
+            <Nav className="me-auto"> 
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/select">Ticket Booth</Nav.Link>
