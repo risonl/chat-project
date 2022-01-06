@@ -1,25 +1,12 @@
-import { Container, Row, Col} from "react-bootstrap";
-import Navigation from "../comps/Navigation"
-import Footer from "../comps/Footer"
-
+import ChatBox from '../comps/ChatBox'
+import Navigation from '../comps/Navigation';
+import Footer from '../comps/Footer';
 function Chat() {
     return (
         <>
-        <Container>
-        <Row><h1>This is the Chatroom</h1></Row>
-            <Row>
-                <Col></Col>
-            <Col><div className="chatBox"></div></Col>
-            <Col></Col>
-            </Row>
-            <Row>
-            <Col></Col>
-            <Col>
-                <input type="text" size='70'></input>
-            </Col>
-            <Col></Col>
-            </Row>
-        </Container>
+        <Navigation />
+        <ChatBox />
+        <Footer />
         </>
     );
 }

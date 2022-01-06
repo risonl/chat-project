@@ -1,0 +1,20 @@
+.chatBox {
+    background-color: grey;
+    width: 60em;
+    height: 30em;
+    overflow: scroll;
+    border: 1px solid black;
+    border-radius: 1em;
+    position: relative;
+}
+body {
+    background-image: url(./generalchat.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chatMessage {
+    background-color: white;
+    width: 60em;
+    height: fit-content;
+    
+}
