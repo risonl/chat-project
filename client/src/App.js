@@ -5,6 +5,7 @@ import About from "./pages/About"
 import Select from "./pages/Select"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
+import './socket/action.js';
 
 function App() {
   return (
