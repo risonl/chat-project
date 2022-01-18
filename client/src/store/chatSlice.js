@@ -9,19 +9,14 @@ const chatSlice = createSlice({
            state.push(action.payload)
            console.log(action.payload)
            console.log(current(state))
-        //    let plainPost
-        //    let stylishPost = plainPost.classList.add('chatMessage')
-        //    let chatBox = document.getElementsByClassName('chatBox')
-        //    let appendedPost = chatBox.append(stylishPost)
-        //    let finishedPost = appendedPost.appendChild(action.payload)
-        //    return (
-        //        finishedPost
-        //    )
         },
+        viewChat: (state, action) => {
+            state.Chat = action.payload
+        }
     },
 })
 
-export const { newMessage } = chatSlice.actions
+export const { newMessage, viewChat } = chatSlice.actions
 
 export const viewMessage = (state) => state.chat
 
