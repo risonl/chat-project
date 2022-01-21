@@ -25,13 +25,11 @@ const io = new Server(httpServer, {
 
 io.on('connection', (socket) => {
   console.log("New Connection..." + socket.id);
-  socket.emit("greeting", "Welcome")
-  io.emit("greeting", "look who showed up, everyone!")
-  socket.broadcast.emit("greeting", "pretend you like them")
 
-  socket.on("userJoin", (room) => {
-    socket.join(room)
-  });
+
+  // socket.on("userJoin", (room) => {
+  //   socket.join(room)
+  // });
 
   //send a message to everyone but the original sender
   socket.on("message", (data) => {
@@ -40,13 +38,13 @@ io.on('connection', (socket) => {
 
   });
 
-  socket.on("usermessage", (room, data) => {
-    socket.leave("public")
-    socket.join(room);
-    console.log(data);
-    socket.to(room).emit("serverMessage", data, socket.id); 
-    io.to(socket.id).emit("PM", `message sent: ${data}`) //this is how you PM 
-  });
+  // socket.on("usermessage", (room, data) => {
+  //   socket.leave("public")
+  //   socket.join(room);
+  //   console.log(data);
+  //   socket.to(room).emit("serverMessage", data, socket.id); 
+  //   io.to(socket.id).emit("PM", `message sent: ${data}`) //this is how you PM 
+  // });
 
   
 

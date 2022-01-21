@@ -3,6 +3,7 @@ import './assets/chat.css'
 import { useState } from "react"
 import {useSelector, useDispatch} from "react-redux"
 import {createMessage, viewChats} from '../actions/chat'
+import socket from "../socket/action"
 //import { newMessage } from "../store/chatSlice"
 
 export default function ChatBox() {
@@ -14,7 +15,7 @@ export default function ChatBox() {
     function handleSubmit(e) {
         e.preventDefault();
         dispatch(createMessage({'text': message.text}))
-        
+        socket.emit("message", {"text": message.text})
         setMessage("")
     }
     function handleChange(e) {
