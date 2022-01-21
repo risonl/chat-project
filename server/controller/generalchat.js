@@ -14,8 +14,9 @@ export const getChat = async (req, res) => {
 
 export const createChat = async (req, res) => {
     const chat = req.body;
+    console.log(chat)
     const newChatMessage = new PostChat({...chat, createdAt: new Date().toISOString()});
-    
+    console.log(newChatMessage)
     try {
         await newChatMessage.save();
 

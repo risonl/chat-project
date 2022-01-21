@@ -1,4 +1,4 @@
-// import * as api from '../api/index.js';
+import * as api from '../api/index.js';
 // import { authenticate } from '../store/userSlice.js'
 
 export const signIn = (formData, router) => async (dispatch) => {
