@@ -59,7 +59,7 @@ io.on('connection', (socket) => {
   
 });
 
-const PORT= 5000;
+const PORT= 4000;
 const CONNECTION_URL = "mongodb+srv://arrayclass:array123@cluster0.wyyr0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 // app.post('/chat', (req, res) => {
@@ -77,8 +77,6 @@ const CONNECTION_URL = "mongodb+srv://arrayclass:array123@cluster0.wyyr0.mongodb
 app.use('/chat', chatRoutes);
 app.use("/test", testRoutes)
 
-// mongoose.connect(CONNECTION_URL)
-//     .then(()=> app.listen(PORT,()=>console.log(`Server is running on port ${PORT}`)))
-//     .catch((err) => console.log(err.message));
-
-httpServer.listen(PORT,()=>console.log(`Server is running on port ${PORT}`))
+ mongoose.connect(CONNECTION_URL)
+     .then(()=> httpServer.listen(PORT,()=>console.log(`Server is running on port ${PORT}`)))
+     .catch((err) => console.log(err.message));

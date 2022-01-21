@@ -1,5 +1,5 @@
 import io from "socket.io-client" //this doesn't seem to be working
-const ENDPOINT = "http://localhost:5000"
+const ENDPOINT = "http://localhost:4000"
 
 const socket = io(ENDPOINT);
 

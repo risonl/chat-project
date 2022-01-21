@@ -1,22 +1,19 @@
 import {Container, Row, Col, Button} from "react-bootstrap"
 import './assets/chat.css'
 import { useState } from "react"
-
-
-import {newMessage } from '../store/chatSlice'
 import {useSelector, useDispatch} from "react-redux"
-
-
+import {createMessage, viewChats} from '../actions/chat'
+//import { newMessage } from "../store/chatSlice"
 
 export default function ChatBox() {
     const dispatch = useDispatch()
     const [message, setMessage] = useState("")
     const messages = useSelector((state) => state.chat)
-    let messageMap = messages.map((text, index) => (<div key={index} className="chatMessage">{text}</div>))
+    let messageMap = messages.map((text, index) => (<div key={index} className="chatMessage">{text.text}</div>))
 
     function handleSubmit(e) {
         e.preventDefault();
-        dispatch(newMessage(message.text))
+        dispatch(createMessage({'text': message.text}))
         
         setMessage("")
     }
