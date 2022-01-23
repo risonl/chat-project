@@ -4,6 +4,9 @@ import App from './App'
 import { BrowserRouter } from 'react-router-dom';
 import {Provider} from 'react-redux'
 import { store } from './store/store';
+import {viewChats} from '../src/actions/chat'
+
+store.dispatch(viewChats())
 
 ReactDOM.render(
   <React.StrictMode>

@@ -2,7 +2,7 @@ import {Container, Row, Col, Button} from "react-bootstrap"
 import './assets/chat.css'
 import { useState } from "react"
 import {useSelector, useDispatch} from "react-redux"
-import {createMessage, viewChats} from '../actions/chat'
+import {createMessage} from '../actions/chat'
 import socket from "../socket/action"
 //import { newMessage } from "../store/chatSlice"
 

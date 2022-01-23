@@ -11,7 +11,9 @@ const chatSlice = createSlice({
            console.log(current(state))
         },
         viewChat: (state, action) => {
-            state.Chat = action.payload
+            console.log(action.payload)
+            state.push(...action.payload)
+            state = action.payload
         }
     },
 })
