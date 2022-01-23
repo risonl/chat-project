@@ -17,7 +17,6 @@ export const createMessage = (formData) => async (dispatch) => {
 export const viewChats = () => async (dispatch) => {
     try {
         const {data} = await api.getChat();
-
         dispatch(viewChat(data));
     } catch (error) {
         console.log(error);
